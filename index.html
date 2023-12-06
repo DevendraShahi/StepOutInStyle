@@ -957,6 +957,7 @@
             fetch('login.html')
             .then(response => response.text())
             .then(data => {
+                $('.hamburger_menu').toggle();
                 const bodyMain = $('main');
                 const bodyFooter = $('footer');
                 bodyMain.html(data);
@@ -1043,6 +1044,7 @@
         });
 
         $('#viewCart').on('click tap', function () {
+            // $('.hamburger_menu').toggle();
             $('#cart-container').toggle();
         });
 

@@ -349,21 +349,11 @@
                             <p class="product-price">$299</p>
 
                             <div class="rating">
-                                <span><img width="20" height="20"
-                                        src="https://img.icons8.com/material-rounded/20/FFE234 /filled-star.png"
-                                        alt="filled-star" /></span>
-                                <span><img width="20" height="20"
-                                        src="https://img.icons8.com/material-rounded/20/FFE234 /filled-star.png"
-                                        alt="filled-star" /></span>
-                                <span><img width="20" height="20"
-                                        src="https://img.icons8.com/material-rounded/20/FFE234 /filled-star.png"
-                                        alt="filled-star" /></span>
-                                <span><img width="20" height="20"
-                                        src="https://img.icons8.com/material-rounded/20/FFE234 /filled-star.png"
-                                        alt="filled-star" /></span>
-                                <span><img width="20" height="20"
-                                        src="https://img.icons8.com/material-rounded/20/FFE234 /filled-star.png"
-                                        alt="filled-star" /></span>
+                                <span><i class="bi bi-star-fill"></i></span>
+                                <span><i class="bi bi-star-fill"></i></span>
+                                <span><i class="bi bi-star-fill"></i></span>
+                                <span><i class="bi bi-star-fill"></i></span>
+                                <span><i class="bi bi-star-fill"></i></span>
                             </div>
                         </div>
                         <!-- <hr /> -->
@@ -957,6 +947,7 @@
             fetch('login.html')
             .then(response => response.text())
             .then(data => {
+                $('#hamburger_btn').toggleClass('bi-x-lg');
                 $('.hamburger_menu').toggle();
                 const bodyMain = $('main');
                 const bodyFooter = $('footer');
@@ -1003,7 +994,6 @@
                         </div>`;
                         exploreFor = exploreFor.toUpperCase();
                         const CardCount = document.querySelectorAll('.explore-grid .product-card').length;
-                        console.log(CardCount);
                         if(CardCount < 8){
                             if (SingleShoes.gender == exploreFor || SingleShoes.category == exploreFor || exploreFor == "ALL") {
                                 exploreGrid.append(productCard);

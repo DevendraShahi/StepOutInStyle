@@ -2142,7 +2142,7 @@
                 });
         };
 
-        $(document).on('click touchstart', '.product-img', function (){
+        $(document).on('click tap', '.product-img', function (){
             const product_id = (this.parentNode.id).slice(5);
             console.log(product_id);
             fetch('single.html')
@@ -2153,7 +2153,7 @@
             });
         });
 
-        $(document).on('click touchstart', '.add-to-cart-button', function (event) {
+        $(document).on('click tap', '.add-to-cart-button', function (event) {
             event.preventDefault();
             const itemId = this.id;
             const cartItemsWrapper = $('.cart_items_wrapper');
@@ -2223,7 +2223,7 @@
                 .catch(error => this.textContent = error);
         });
 
-        $(document).on('click touchstart', '.remove_from_cart_btn', function () {
+        $(document).on('click tap', '.remove_from_cart_btn', function () {
             const itemId = this.id;
             let itemPrice = document.querySelector(`#price_of_${itemId}`).textContent;
             itemPrice = itemPrice.slice(1);
@@ -2271,7 +2271,7 @@
                 });
         });
 
-        $(document).on('click touchstart', '.explore-menu li', function () {
+        $(document).on('click tap', '.explore-menu li', function () {
             let filter = this.id;
             const exploreItems = $(`.explore-filter`);
             exploreItems.removeClass('explore_selected');
@@ -2285,7 +2285,7 @@
         });
 
         // Loading SignIn Page
-        $('#login_btn').on('click touchstart', function(){
+        $('#login_btn').on('click tap', function(){
             fetch('login.html')
             .then(response => response.text())
             .then(data => {
@@ -2366,15 +2366,15 @@
             });
         }
 
-        $('#dropdown').on('click touchstart', function () {
+        $('#dropdown').on('click tap', function () {
             $('#drop').toggle();
         });
 
-        $('#viewCart').on('click touchstart', function () {
+        $('#viewCart').on('click tap', function () {
             $('#cart-container').toggle();
         });
 
-        $('#hamburger_btn').on('click touchstart', function () {
+        $('#hamburger_btn').on('click tap', function () {
             $(this).toggleClass('bi-x-lg');
             const navbarCenter = $('.navbar-center');
             const navbarRight = $('.navbar-right');

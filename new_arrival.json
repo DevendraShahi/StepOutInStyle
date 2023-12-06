@@ -14,7 +14,7 @@
     },
     "12": {
         "id": 12,
-        "name": "Nike Air Max 90 LTR",
+        "name": "Nike Air LTR",
         "brand": "NIKE",
         "gender": "KIDS",
         "category": "CASUAL",
@@ -27,7 +27,7 @@
     },
     "13": {
         "id": 13,
-        "name": "Nike Joyride Dual Run",
+        "name": "Nike Joyride",
         "brand": "NIKE",
         "gender": "KIDS",
         "category": "RUNNING",

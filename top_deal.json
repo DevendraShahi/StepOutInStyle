@@ -1,7 +1,7 @@
 {
     "1": {
         "id": 1, 
-        "name": "Nike React Infinity Run Flyknit",
+        "name": "Nike React Infinity",
         "brand": "NIKE",
         "gender": "MEN",
         "category": "RUNNING",
@@ -27,7 +27,7 @@
     },
     "3": {
         "id": 3,
-        "name": "Nike Air Zoom Pegasus 37",
+        "name": "Nike Air Pegasus",
         "brand": "NIKE",
         "gender": "WOMEN",
         "category": "RUNNING",
@@ -40,7 +40,7 @@
     },
     "4": {
         "id": 4,
-        "name": "Nike Joyride Run Flyknit",
+        "name": "Nike Joyride Flyknit",
         "brand": "NIKE",
         "gender": "WOMEN", 
         "category": "RUNNING",
@@ -53,7 +53,7 @@
     },
     "5": {
         "id": 5,
-        "name": "Nike Mercurial Vapor 13 Elite FG",
+        "name": "Nike Mercurial Vapor",
         "brand": "NIKE", 
         "gender": "WOMEN",
         "category": "FOOTBALL",
@@ -66,7 +66,7 @@
     },
     "6": {
         "id": 6,
-        "name": "Nike Phantom Vision Elite Dynamic Fit FG",
+        "name": "Nike Phantom Fit FG",
         "brand": "NIKE",
         "gender": "WOMEN", 
         "category": "FOOTBALL",
@@ -79,7 +79,7 @@
     },
     "7": {
         "id": 7,
-        "name": "Nike Phantom Venom Academy FG",
+        "name": "Nike Phantom FG",
         "brand": "NIKE",
         "gender": "WOMEN",
         "category": "FOOTBALL", 
@@ -92,7 +92,7 @@
     },
     "8": {
         "id": 8,
-        "name": "Nike Mercurial Vapor 13 Elite Tech Craft FG",
+        "name": "Nike Mercurial FG",
         "brand": "NIKE",
         "gender": "MEN",
         "category": "FOOTBALL", 
@@ -105,7 +105,7 @@
     },
     "9": {
         "id": 9,
-        "name": "Nike Mercurial Superfly 7 Pro MDS FG", 
+        "name": "Nike Mercurial", 
         "brand": "NIKE",
         "gender": "MEN", 
         "category": "FOOTBALL",

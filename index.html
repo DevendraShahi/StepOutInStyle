@@ -118,8 +118,11 @@
     <main>
         <div class="slider">
             <div class="slider-bg">
-                <video autoplay muted loop id="myVideo">
+                <video autoplay muted loop id="slide_bg">
                     <source src="img/slider.mp4" type="video/mp4">
+                  </video>
+                <video autoplay muted loop id="slide_bg_mobile">
+                    <source src="img/slider-mobile.mp4" type="video/mp4">
                   </video>
             </div>
             <div class="slider-left">
@@ -794,16 +797,15 @@
                 });
         };
 
-        $(document).on('click tap', '.product-img', function (){
-            const product_id = (this.parentNode.id).slice(5);
-            console.log(product_id);
-            fetch('single.html')
-            .then(response => response.text())
-            .then(data => {
-                const bodyMain = $('main');
-                bodyMain.html(data);
-            });
-        });
+        // $(document).on('click tap', '.product-img', function (){
+        //     const product_id = (this.parentNode.id).slice(5);
+        //     fetch('single.html')
+        //     .then(response => response.text())
+        //     .then(data => {
+        //         const bodyMain = $('main');
+        //         bodyMain.html(data);
+        //     });
+        // });
 
         $(document).on('click tap', '#searchBtn', function (){
             // const searchQuery = document.querySelector('#search').text;

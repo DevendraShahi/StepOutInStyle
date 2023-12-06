@@ -173,17 +173,20 @@ body {
     /* height: 85vh; */
 }
 
-#slide_bg {
+.slider-bg video{
     object-fit: contain;
     height: 100%;
     width: 100%;
 }
 
-#slide_bg_mobile{
+.slider-bg-mobile{
+    display: none;
+}
+
+.slider-bg-mobile video{
     object-fit: contain;
     height: 100%;
     width: 100%;
-    display: none;
 }
 
 .slider-left {
@@ -1250,13 +1253,10 @@ footer .footer-grid .website-intro .payment-grid {
     .slider-bg {
         position: static;
         width: 100%;
-    }
-
-    #slide_bg{
         display: none;
     }
 
-    #slide_bg_mobile{
+    .slider-bg-mobile{
         display: block;
     }
 

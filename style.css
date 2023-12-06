@@ -302,7 +302,7 @@ section {
 .product-card .product-img {
     height: 250px;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     display: block;

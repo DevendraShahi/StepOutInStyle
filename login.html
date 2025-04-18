@@ -1,0 +1,39 @@
+<body>
+    <div class="login-container-wrapper">
+        <div class="login-container">
+            <div class="login-body">
+                <h1>Login</h1>
+                <form action="">
+                    <input type="email" name="username" placeholder="Email" autocomplete="email">
+                    <input type="password" name="password" placeholder="Password" autocomplete="current-password">
+                    <p>Don't have account? <span id="signup" onclick="loadSignup()">Sign Up</span></p>
+                </form>
+            </div>
+        </div>
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div>
+
+    <script>
+        function loadSignup(){
+            fetch('signup.html')
+            .then(response => response.text())
+            .then(data => {
+                const bodyMain = $('main');
+                const bodyFooter = $('footer');
+                bodyMain.html(data);
+                bodyFooter.remove();
+            });
+        }
+    </script>
+</body>

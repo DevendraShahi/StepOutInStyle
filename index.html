@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StepOutInStyle</title>
+    <link
+      rel="shortcut icon"
+      href="img/step_new_logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="logo" href="index.html"
+        ><img src="img/step-logo.svg" alt=""
+      /></a>
+
+      <div class="navbar-center-wrapper">
+        <div class="navbar-center">
+          <div class="dropdown-btn" id="dropdown">
+            <p class="drop-down">
+              Categories <i class="bi bi-caret-down-fill"></i>
+            </p>
+          </div>
+          <a href="#">Deal</a>
+          <a href="#">What's New</a>
+          <div class="searchBox">
+            <div class="searchBox-wrapper">
+              <input
+                class="searchInput"
+                type="text"
+                name="search"
+                id="serch"
+                placeholder="Search"
+              />
+              <button class="searchButton" href="#" id="searchBtn">
+                <i class="bi bi-search" style="color: black"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-right-wrapper">
+        <div class="navbar-right">
+          <div class="icon account-icon" id="login_btn">
+            <i class="bi bi-person-bounding-box"></i>
+          </div>
+          <!-- <div>Account</div> -->
+          <div class="icon cart-icon" id="viewCart">
+            <i class="bi bi-cart-check"></i>
+          </div>
+          <!-- <div>Cart</div> -->
+        </div>
+      </div>
+
+      <i class="bi bi-list" id="hamburger_btn"></i>
+    </div>
+    <div class="hamburger_menu"></div>
+
+    <div id="drop">
+      <div class="category-dropdown" id="category-dropdown">
+        <p class="dropdown-title">Popular Categories</p>
+        <hr />
+        <div class="category-dropdown-items">
+          <a href="">
+            <div class="category-dropdown-item">
+              <img src="img/adidas.png" alt="" />
+              <p>Adidas</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="category-dropdown-item">
+              <img src="img/nike.png" alt="" />
+              <p>Nike</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="category-dropdown-item">
+              <img src="img/puma.png" alt="" />
+              <p>Puma</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="category-dropdown-item">
+              <img src="img/reebok.png" alt="" />
+              <p>Reebok</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="category-dropdown-item">
+              <img src="img/jordan.png" alt="" />
+              <p>Jordan</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="category-dropdown-item">
+              <img src="img/vans.png" alt="" />
+              <p>Vans</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cart-container">
+      <div class="cart">
+        <div class="cart_items">
+          <p class="title">My Cart</p>
+          <div class="cart_items_wrapper">
+            <div class="no_cart_items">
+              <div class="img_wrapper">
+                <img src="img/no-items.png" alt="" />
+              </div>
+              <p>No Items Yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-total-wrapper">
+          <div class="cart-total-head">
+            <p class="total-items" id="total-items">
+              Total Items: <span>0</span>
+            </p>
+            <p class="sub-total" id="sub-total">Sub-Total: $<span>0</span></p>
+            <p class="shipping-charge" id="shipping-charge">
+              Shipping Charge: $<span>0</span>
+            </p>
+          </div>
+          <div class="cart-total">
+            <p class="total-amount" id="total-amount">$<span>0</span></p>
+            <a href="">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="slider">
+        <div class="slider-bg">
+          <video autoplay muted loop>
+            <source src="img/slider.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="slider-bg-mobile">
+          <video autoplay muted loop>
+            <source src="img/slider-mobile.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="slider-left">
+          <h1>
+            "Walk in Style,<br />
+            Stride in Confidence."
+          </h1>
+          <a href="">Shop Now</a>
+        </div>
+      </div>
+
+      <section class="category">
+        <h1 class="section_heading">Shop our top Categories</h1>
+
+        <div class="category-wrapper">
+          <a href="" class="category-link">
+            <div class="category-item">
+              <p class="category-title">Sneakers</p>
+              <img src="img/sneakers.png" alt="" class="item-icon" />
+            </div>
+          </a>
+
+          <a href="" class="category-link">
+            <div class="category-item">
+              <p class="category-title">sports</p>
+              <img src="img/sports-shoes-icon.png" alt="" class="item-icon" />
+            </div>
+          </a>
+
+          <a href="" class="category-link">
+            <div class="category-item">
+              <p class="category-title">Casual</p>
+              <img src="img/casual-shoes-icon.png" alt="" class="item-icon" />
+            </div>
+          </a>
+
+          <a href="" class="category-link">
+            <div class="category-item">
+              <p class="category-title">Boot</p>
+              <img src="img/boot.png" alt="" class="item-icon" />
+            </div>
+          </a>
+
+          <a href="" class="category-link">
+            <div class="category-item">
+              <p class="category-title">Loafer</p>
+              <img src="img/loafers.png" alt="" class="item-icon" />
+            </div>
+          </a>
+
+          <a href="" class="category-link">
+            <div class="category-item">
+              <p class="category-title">Slippers</p>
+              <img src="img/slippers.png" alt="" class="item-icon" />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="top-deal">
+        <h1 class="section_heading">Deal of The day!</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper top_deals_wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-1"></div>
+        <div class="swiper-button-next swiper-button-next-1"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </section>
+
+      <section class="brand">
+        <h1 class="section_heading">Shop By Brand</h1>
+        <div class="brand_wrapper">
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/adidas.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Adidas</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/nike.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Nike</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/puma.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Puma</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/jordan.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Jordan</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/vans.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Vans</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/reebok.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Reebok</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/converse.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Converse</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/Crocs.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Crocs</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/timberland.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Timberland</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="brand-card">
+              <div class="brand-logo">
+                <img src="img/Bata.png" alt="" />
+              </div>
+              <div class="brand-name">
+                <p>Bata</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <div class="trending-now">
+        <h1 style="color: white; margin-bottom: 4rem">Trending Now</h1>
+
+        <div class="trending-cards">
+          <div class="trending-card" id="card_trend">
+            <div class="t-card-left">
+              <img src="img/trend-airforce.png" alt="" />
+            </div>
+            <div class="t-card-right">
+              <p class="t-product-name">Nike Air Force Air Jordan 4</p>
+              <p class="t-product-color">Retro Og 840606</p>
+              <div class="pricing-rating">
+                <p class="product-price">$299</p>
+
+                <div class="rating">
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                </div>
+              </div>
+              <!-- <hr /> -->
+              <!-- <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Culpa commodi quasi ratione sequi dicta
+                            voluptatibus officiis maiores aut deserunt. Quidem!
+                        </p> -->
+
+              <form action="">
+                <p class="size-lable">Size (UK)</p>
+                <ul class="shoes-size">
+                  <label class="material-icons">
+                    <input type="radio" name="size" value="5" checked />
+                    <span>5</span>
+                  </label>
+                  <label class="material-icons">
+                    <input type="radio" name="size" value="6" />
+                    <span>6</span>
+                  </label>
+                  <label class="material-icons">
+                    <input type="radio" name="size" value="7" />
+                    <span>7</span>
+                  </label>
+                  <label class="material-icons">
+                    <input type="radio" name="size" value="9" />
+                    <span>8</span>
+                  </label>
+                  <label for="walking" class="material-icons">
+                    <input type="radio" name="size" value="9" />
+                    <span>9</span>
+                  </label>
+                </ul>
+
+                <button class="add-to-cart-button" id="trend">
+                  <i class="bi bi-cart-plus-fill"></i> Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="new-arrivals">
+        <h1 class="section_heading">New Arrivals!</h1>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper new_arrival_wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-2"></div>
+        <div class="swiper-button-next swiper-button-next-2"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </section>
+
+      <div class="discounts">
+        <div class="discount-left">
+          <p class="text">Get 5% Cash Back</p>
+          <p class="sec-text">with MasterCard and VisaCard</p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="discount-right">
+          <img src="img/payment.png" alt="" />
+        </div>
+      </div>
+
+      <section class="most-selling">
+        <h1 class="section_heading">Most Selling Products!</h1>
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper most_selling_wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-3"></div>
+        <div class="swiper-button-next swiper-button-next-3"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </section>
+
+      <section class="explore">
+        <h1 class="section_heading">Explore the Shoes World!</h1>
+        <ul class="explore-menu">
+          <li class="explore-filter" id="All">All</li>
+          <li class="explore-filter" id="men">Mens</li>
+          <li class="explore-filter" id="women">Womens</li>
+          <li class="explore-filter" id="kids">Kids</li>
+          <li class="explore-filter" id="casual">Casual</li>
+          <li class="explore-filter" id="sports">Sports</li>
+          <li class="explore-filter" id="Running">Running</li>
+          <li class="explore-filter" id="Football">Football</li>
+        </ul>
+
+        <div class="explore-grid"></div>
+      </section>
+
+      <div class="banner">
+        <p class="banner-text">Get amzing discount on Nike Products</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="website-intro">
+          <img src="img/step-logo.svg" alt="" class="logo" />
+          <!-- <p class="website-name">StepOutInStyle</p> -->
+          <!-- <p class="desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
+            dolores.
+          </p> -->
+          <div class="payments">
+            <p class="footer-grid-title">Accepted Payments</p>
+            <ul class="payment-grid">
+              <li>
+                <img src="img/card.png" alt="MasterCard" />
+              </li>
+
+              <li>
+                <img src="img/visa.png" alt="visa" />
+              </li>
+
+              <li>
+                <img src="img/amazon-pay.png" alt="Amazon Pay" />
+              </li>
+
+              <li>
+                <img src="img/google-pay.png" alt="Google Pay" />
+              </li>
+
+              <li>
+                <img src="img/paypal.png" alt="Paypal" />
+              </li>
+
+              <li>
+                <img src="img/apple-pay.png" alt="Apple Pay" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="categories-link">
+          <p class="footer-grid-title">Categories</p>
+          <ul class="category-links">
+            <li><a href="">Sneakers</a></li>
+            <li><a href="">Casual</a></li>
+            <li><a href="">Formal</a></li>
+            <li><a href="">Loafer</a></li>
+            <li><a href="">Crocs</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Party</a></li>
+            <li><a href="">ballet</a></li>
+          </ul>
+        </div>
+
+        <div class="aboutUs-link">
+          <p class="footer-grid-title">About Us</p>
+          <ul class="aboutUs-links">
+            <li><a href="">About StepOutInStyle</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">News and Blog</a></li>
+            <li><a href="">StepOutInStyle Brands</a></li>
+            <li><a href="">Affilate and Partners</a></li>
+            <li><a href="">Idea and Guides</a></li>
+            <!-- <li><a href="">Party</a></li>
+                    <li><a href="">ballet</a></li> -->
+          </ul>
+        </div>
+
+        <div class="help-link">
+          <p class="footer-grid-title">Help</p>
+          <ul class="help-links">
+            <li><a href="">StepOutInStyle Help</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">Track Orders</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Security and Fraud</a></li>
+            <!-- <li><a href="">Party</a></li>
+                    <li><a href="">ballet</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <hr />
+
+      <div class="footer-end">
+        <div class="footer-end-left">
+          <div class="flex">
+            <a href="">
+              <i class="bi bi-shop"></i>
+              Become Seller
+            </a>
+          </div>
+          <div class="flex">
+            <a href="">
+              <i class="bi bi-patch-question"></i>
+              Help Center
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-end-center">
+          <div class="flex">
+            <a href=""> Terms of Service </a>
+          </div>
+          <div class="flex">
+            <a href=""> Privacy & Policy </a>
+          </div>
+        </div>
+
+        <div class="footer-end-right">
+          <p>StepOutInStyle &copy; All Right Reserved | 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper1 = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 5,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+          // clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next-1",
+          prevEl: ".swiper-button-prev-1",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: "auto",
+        spaceBetween: 5,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next-2",
+          prevEl: ".swiper-button-prev-2",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      const swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: "auto",
+        spaceBetween: 5,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next-3",
+          prevEl: ".swiper-button-prev-3",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        loadCards("top_deal", "top_deals_wrapper");
+        loadCards("new_arrival", "new_arrival_wrapper");
+        loadCards("most_selling", "most_selling_wrapper");
+        loadCards("most_selling", "similar-products-wrapper");
+        exploreData("all");
+        const exploreItem = $(`.explore-menu #All`);
+        exploreItem.addClass("explore_selected");
+        checkCart();
+      });
+
+      // Generates a random number between a and b
+      function getRandomDiscount() {
+        return Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+      }
+
+      function loadCards(dataName, DataFor) {
+        fetch(`${dataName}.json`)
+          .then((Response) => Response.json())
+          .then((data) => {
+            const shoes = Object.values(data);
+            let swiperSlide = Array.from(
+              document.querySelectorAll(`.${DataFor} .swiper-slide`)
+            );
+            shoes.forEach((SingleShoes, index) => {
+              const randomDiscount = getRandomDiscount();
+              const dicountDiscount = Math.floor(
+                (randomDiscount / SingleShoes.price) * 100
+              );
+              const priceAfterDiscount = SingleShoes.price - dicountDiscount;
+              swiperSlide[index].innerHTML = `
+                    <div class="product-card" id="card_${SingleShoes.id}">
+                        <div class="product-img"><img src="${
+                          SingleShoes.imageURL
+                        }"/>
+                            <div class="wishlist_icon save_${
+                              SingleShoes.id
+                            }" id="save_${SingleShoes.id}" onclick="wished(${
+                SingleShoes.id
+              })">
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </div>
+                            ${
+                              DataFor === "top_deals_wrapper"
+                                ? `<div class="deal_tag">
+                                <p id="tag_discount" class="tag_discount">${randomDiscount}%</p>
+                            </div>`
+                                : ""
+                            }
+                            ${
+                              DataFor === "new_arrival_wrapper"
+                                ? `<div class="new_tag">
+                                <img src="img/price-tag.png" alt="new"/>
+                            </div>`
+                                : ""
+                            }
+                        </div>
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">${SingleShoes.name}</p>
+                                <p class="product-brand">${
+                                  SingleShoes.brand
+                                }</p>
+                            </div>
+
+                            <div class="item_pricing">
+                                ${
+                                  DataFor === "top_deals_wrapper"
+                                    ? `<span class="product-price">$${priceAfterDiscount}</span><del class="original_price">$${SingleShoes.price}</del>`
+                                    : `<span class="product-price">$${SingleShoes.price}</span>`
+                                }
+                             </div>
+
+                            <form action="#" method ="get">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size"></ul>
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button" id="${
+                                      SingleShoes.id
+                                    }"><i class="bi bi-cart-plus-fill"></i> Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>`;
+              const shoesLabel = document.querySelector(
+                `#card_${SingleShoes.id} .shoes-size`
+              );
+              SingleShoes.size.forEach((size) => {
+                let shoesLabelContent = document.createElement("label");
+                shoesLabelContent.classList.add("material-icons");
+                shoesLabelContent.innerHTML = `
+                                            <input type="radio" name="size" value="${size}" />
+                                            <span>${size}</span>`;
+                shoesLabel.append(shoesLabelContent);
+              });
+            });
+          });
+      }
+
+      // $(document).on('click tap', '.product-img', function (){
+      //     const product_id = (this.parentNode.id).slice(5);
+      //     fetch('single.html')
+      //     .then(response => response.text())
+      //     .then(data => {
+      //         const bodyMain = $('main');
+      //         bodyMain.html(data);
+      //     });
+      // });
+
+      $(document).on("click tap", "#searchBtn", function () {
+        // const searchQuery = document.querySelector('#search').text;
+        // console.log(searchQuery);
+        fetch("search.html")
+          .then((response) => response.text())
+          .then((data) => {
+            const bodyMain = $("main");
+            bodyMain.html(data);
+          });
+      });
+
+      $(document).on("click tap", ".add-to-cart-button", function (event) {
+        event.preventDefault();
+        const itemId = this.id;
+        const cartItemsWrapper = $(".cart_items_wrapper");
+        const wrapperItemCard = $(`#card_${itemId}`);
+        console.log(wrapperItemCard);
+        const cartItemsTotal = $(".cart-total-head");
+        let subTotalSpan = document.querySelector("#sub-total span");
+        let itemPrice = document.querySelector(
+          `#card_${itemId} .product-price`
+        ).textContent;
+        itemPrice = itemPrice.slice(1);
+        this.textContent = "Adding";
+        this.style.backgroundColor = "gray";
+        fetch("all_products.json")
+          .then((Response) => Response.json())
+          .then((data) => {
+            const item = data[itemId];
+            // console.log(item);
+            const itemCard = document.createElement("div");
+            itemCard.classList.add("cart-item");
+            itemCard.id = itemId;
+            itemCard.innerHTML = `
+                <div class="item_content">
+                    <div class="cart-item-img">
+                        <img src="${item.imageURL}" alt="" />
+                    </div>
+                    <div class="cart-item-info">
+                        <p class="product-name">${item.name}</p>
+                        <p class="price" id="price_of_${item.id}">$${itemPrice}</p>
+                        <span>Size : 7</span>
+                    </div>
+                </div>
+                <div class="remove_from_cart_btn" id="${item.id}">
+                    <i class="bi bi-x"></i>
+                </div>`;
+
+            cartItemsWrapper.append(itemCard);
+
+            let totalCartSpan = document.querySelector("#total-items span");
+            let countItem = totalCartSpan.textContent;
+            let totalCartItem = +countItem + 1;
+            totalCartSpan.textContent = totalCartItem;
+
+            let subTotal = subTotalSpan.textContent;
+            let itemSubTotal = +subTotal + +itemPrice;
+            subTotalSpan.textContent = itemSubTotal;
+
+            let shippingChargeSpan = document.querySelector(
+              "#shipping-charge span"
+            );
+            let shippingCharge = shippingChargeSpan.textContent;
+            let shippingChargeTotal =
+              (item.price <= 100 ? 5 : 0) + +shippingCharge;
+            shippingChargeSpan.textContent = shippingChargeTotal;
+
+            let totalSpan = document.querySelector("#total-amount span");
+            let total = totalSpan.textContent;
+            let grandTotal = itemSubTotal + shippingChargeTotal;
+            totalSpan.textContent = grandTotal;
+
+            // console.log(totalCartItem);
+            const addedIcon = document.createElement("i");
+            addedIcon.classList.add("bi", "bi-check2-circle");
+            const space = document.createTextNode(" ");
+            this.textContent = "Added to Cart";
+            this.style.backgroundColor = "#32cd32";
+            this.insertBefore(space, this.firstChild);
+            this.insertBefore(addedIcon, this.firstChild);
+            this.disabled = true;
+            checkCart();
+          })
+          .catch((error) => (this.textContent = error));
+      });
+
+      $(document).on("click tap", ".remove_from_cart_btn", function () {
+        const itemId = this.id;
+        let itemPrice = document.querySelector(
+          `#price_of_${itemId}`
+        ).textContent;
+        itemPrice = itemPrice.slice(1);
+        const cardBtn = document.querySelector(
+          `#card_${itemId} .add-to-cart-button`
+        );
+        fetch("all_products.json")
+          .then((Response) => Response.json())
+          .then((data) => {
+            const item = data[itemId - 1];
+            const addIcon = document.createElement("i");
+            addIcon.classList.add("bi", "bi-cart-plus-fill");
+            const space = document.createTextNode(" ");
+            cardBtn.textContent = "Add to Cart";
+            cardBtn.style.backgroundColor = "tomato";
+            cardBtn.insertBefore(space, cardBtn.firstChild);
+            cardBtn.insertBefore(addIcon, cardBtn.firstChild);
+            cardBtn.disabled = false;
+
+            let totalCartSpan = document.querySelector("#total-items span");
+            let countItem = totalCartSpan.textContent;
+            let totalCartItem = +countItem - 1;
+            totalCartSpan.textContent = totalCartItem;
+
+            let subTotalSpan = document.querySelector("#sub-total span");
+            let subTotal = subTotalSpan.textContent;
+            let itemSubTotal = +subTotal - itemPrice;
+            subTotalSpan.textContent = itemSubTotal;
+
+            let shippingChargeSpan = document.querySelector(
+              "#shipping-charge span"
+            );
+            let shippingCharge = shippingChargeSpan.textContent;
+            let shippingChargeTotal =
+              +shippingCharge - (itemPrice <= 100 ? 5 : 0);
+            shippingChargeSpan.textContent = shippingChargeTotal;
+
+            let totalSpan = document.querySelector("#total-amount span");
+            let total = totalSpan.textContent;
+            // debugger;
+            let grandTotal = +total - itemPrice - (itemPrice <= 100 ? 5 : 0);
+            // debugger;
+            totalSpan.textContent = grandTotal;
+            const cart_card = this.parentNode;
+            $(cart_card).toggleClass("remove");
+            setTimeout(() => {
+              cart_card.remove();
+              checkCart();
+            }, 300);
+          });
+      });
+
+      $(document).on("click tap", ".explore-menu li", function () {
+        let filter = this.id;
+        const exploreItems = $(`.explore-filter`);
+        exploreItems.removeClass("explore_selected");
+        const exploreItem = $(`.explore-menu #${filter}`);
+        exploreItem.toggleClass("explore_selected");
+        const exploreCards = document.querySelectorAll(
+          ".explore .product-card"
+        );
+        exploreCards.forEach((exploreCard) => {
+          exploreCard.remove();
+        });
+        exploreData(filter);
+      });
+
+      // Loading SignIn Page
+      $("#login_btn").on("click tap", function () {
+        fetch("login.html")
+          .then((response) => response.text())
+          .then((data) => {
+            $("#hamburger_btn").toggleClass("bi-x-lg");
+            $(".hamburger_menu").toggle();
+            const bodyMain = $("main");
+            const bodyFooter = $("footer");
+            bodyMain.html(data);
+            bodyFooter.remove();
+          });
+      });
+
+      function exploreData(exploreFor) {
+        fetch("all_products.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const shoes = Object.values(data);
+            const exploreGrid = document.querySelector(".explore-grid");
+
+            shoes.forEach((SingleShoes) => {
+              const productCard = document.createElement("div");
+              productCard.classList.add("product-card");
+              productCard.id = `card_${SingleShoes.id}`;
+              productCard.innerHTML = `
+                        <div class="product-img">
+                            <img src="${SingleShoes.imageURL}"/>
+                            <div class="wishlist_icon save_${SingleShoes.id}" id="save_${SingleShoes.id}" onclick="wished(${SingleShoes.id})">
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">${SingleShoes.name}</p>
+                                <p class="product-brand">${SingleShoes.brand}</p>
+                            </div>
+
+                            <div class="item_pricing">
+                                <span class="product-price">$${SingleShoes.price}</span>
+                             </div>
+
+                            <form action="#" method ="get">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size"></ul>
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button" id="${SingleShoes.id}"><i class="bi bi-cart-plus-fill"></i> Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>`;
+              exploreFor = exploreFor.toUpperCase();
+              const CardCount = document.querySelectorAll(
+                ".explore-grid .product-card"
+              ).length;
+              if (CardCount < 8) {
+                if (
+                  SingleShoes.gender == exploreFor ||
+                  SingleShoes.category == exploreFor ||
+                  exploreFor == "ALL"
+                ) {
+                  exploreGrid.append(productCard);
+                }
+              }
+            });
+          });
+      }
+
+      function wished(id) {
+        const wishlists = document.querySelectorAll(`.save_${id}`);
+        wishlists.forEach((wishlist) => {
+          const wishlistIcon = wishlist.querySelectorAll("i");
+
+          wishlistIcon.forEach((icon) => {
+            icon.classList.toggle("liked");
+            const spanElement = document.createElement("span");
+            spanElement.textContent = "Added to Wishlist";
+            spanElement.style.padding = "0 0.5rem";
+            spanElement.style.color = "white";
+            if (icon.classList.contains("liked")) {
+              wishlist.style.backgroundColor = "#32cd32";
+              icon.parentNode.insertBefore(spanElement, icon);
+              setTimeout(() => {
+                wishlist.style.backgroundColor = "rgba(225, 225, 225, 1)";
+                spanElement.remove();
+              }, 2000);
+            } else {
+              wishlist.style.backgroundColor = "rgba(225, 225, 225, 1)";
+              icon.previousSibling.remove();
+            }
+          });
+        });
+      }
+
+      $("#dropdown").on("click tap", function () {
+        $("#drop").toggle();
+      });
+
+      $("#viewCart").on("click tap", function () {
+        // $('.hamburger_menu').toggle();
+        $("#cart-container").toggle();
+      });
+
+      $("#hamburger_btn").on("click tap", function () {
+        $(this).toggleClass("bi-x-lg");
+        const navbarCenter = $(".navbar-center");
+        const navbarRight = $(".navbar-right");
+        $(".hamburger_menu").append(navbarCenter);
+        $(".hamburger_menu").append(navbarRight);
+        $(".hamburger_menu").toggle();
+      });
+
+      function checkCart() {
+        const cartItemsWrapper = $(".cart_items_wrapper");
+        const noCartItems = $(".no_cart_items");
+
+        if (
+          cartItemsWrapper.children().length === 1 &&
+          cartItemsWrapper.children()[0] === noCartItems[0]
+        ) {
+          noCartItems.show();
+        } else {
+          noCartItems.hide();
+        }
+      }
+    </script>
+  </body>
+</html>

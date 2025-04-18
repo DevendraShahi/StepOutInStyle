@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+    <style>
+        .product-details {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.product-detail-left {
+  padding: 1rem 0 1rem 2rem;
+  display: grid;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product-slider-img {
+  height: 420px;
+  width: 420px;
+  justify-content: center;
+}
+
+
+.product-detail-left .swiper-wrapper{
+    padding: 0;
+}
+
+.product-detail-left .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail-left .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail-left .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* .product-detail-left .swiper {
+  width: 100%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.product-detail-left .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.product-detail-left .product_img_swiper {
+  height: 80%;
+  width: 100%;
+}
+
+.product-detail-left .product_img_gallery {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.product-detail-left .product_img_gallery .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.product-detail-left .product_img_gallery .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.product-details .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details .product-detail-right {
+    
+    flex-basis: 40%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.product-head {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.product-brand {
+  align-self: flex-end;
+  color: darkgray;
+  font-size: 0.8rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.size-lable {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.shoes-size {
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.shoes-color {
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.shoes-size li {
+  margin-right: 0.5rem;
+}
+
+.shoes-color li {
+  margin-right: 0.5rem;
+}
+
+.shoes-size label {
+  position: relative;
+}
+
+.shoes-color label {
+  position: relative;
+}
+
+.shoes-size label + label {
+  margin-left: 8px;
+}
+
+.shoes-color label + label {
+  margin-left: 8px;
+}
+
+.card-content input[type="radio"] + span {
+  font-weight: 500;
+  height: 0.3rem;
+  width: 0.3rem;
+}
+
+.shoes-size input[type="radio"]:checked + span {
+  color: white;
+  background-color: black;
+}
+
+.shoes-color input[type="radio"]:checked + span {
+  border: 3px solid black;
+}
+
+.product-detail-center {
+  background-color: #eee;
+  padding: 2rem;
+  flex: 1;
+}
+
+.order-summary {
+  background-color: white;
+  height: 100%;
+  padding: 1rem;
+  /* background-color:azure; */
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.order-summary-head p {
+  margin: 0;
+  padding: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid orangered;
+}
+
+.order-summary-body {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+
+.quantity {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+.quantity form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.quantity form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.quantity form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* form #input-wrap {
+margin: 0px;
+padding: 0px;
+} */
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.details-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+
+.detail {
+  display: flex;
+  gap: 0.5rem;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.detail p {
+  margin: 0;
+}
+
+.details-block p {
+  font-weight: 500;
+  margin: 0;
+}
+
+.notes {
+  width: 100%;
+}
+
+.notes textarea {
+  border-radius: 5px;
+  border: 2px solid orangered;
+  width: 100%;
+  /* padding: 0.2rem; */
+}
+
+.coupon {
+  border-radius: 8px;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coupon p {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.total-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-block p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+button {
+  height: 2.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.buttons .buy {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.buttons .add-to-cart {
+  background-color: white;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+}
+
+.rating {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.rating .rating-block {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 5px;
+}
+
+.rating .rating-block .rating-point {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.rating-range {
+  flex: 1;
+}
+
+.rating-range ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  /* gap: 0.2rem; */
+}
+
+.rating-range ul li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-range ul li label {
+  font-weight: 0.8rem;
+  font-weight: 500;
+}
+
+.rating-range .range-center {
+  width: 100%;
+  flex: 1;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.product_additionals{
+    display: flex;
+    gap: 1rem;
+}
+
+/* CSS FOR REVIEWS */
+.write-review {
+  /* border: 1px dotted black; */
+  background-color: #ddd;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.review-section {
+  flex: 1;
+}
+
+.write-review form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.write-review form textarea {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.write-review form .write {
+  flex: 1;
+}
+
+input[type="file"] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.write-review form .label {
+  width: 20px;
+  height: 20px;
+  border: 2px dashed gray;
+  border-radius: 5px;
+  display: block;
+  padding: 0.4rem;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+.write-review form .upload-img img {
+  display: block;
+  font-size: 42px;
+  padding-bottom: 16px;
+}
+
+.upload-img img,
+.title {
+  color: gray;
+  transition: 200ms color;
+}
+
+.write-review form .label:hover {
+  border: 2px solid black;
+}
+
+  .upload-img img,
+  .title {
+    color: black;
+  }
+
+.user-pic {
+  /* align-self: center; */
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.user-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.customer-reviews {
+  border-radius: 8px;
+  margin-top: 1rem;
+  background-color: rgb(224, 235, 245);
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.review{
+  padding: 2rem 1rem 2rem 2rem;
+  width: 30%;
+}
+
+h3{
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.user{
+  display: grid;
+  flex: 1;
+}
+
+.user-head{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-head .name{
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.rating-stars{
+  display: flex;
+}
+
+.review-desc p{
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* Similar Products section */
+.similar-products{
+    padding: 2rem 2rem 2rem 1rem;
+}
+
+.similar-products-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .product-details{
+        flex-flow: column;
+    }
+
+    .product-detail-left{
+        padding: 0;
+    }
+
+    .product-slider-img{
+        width: 100vw;
+    }
+
+    .product-detail-left .review-section {
+        padding : 0 2rem;
+    }
+
+    .product-details .product-detail-right{
+        padding: 0 2rem;
+    }
+    
+    .product-details .product-detail-center{
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .product_additionals{
+        flex-flow: column;
+    }
+    .review{
+  padding: 0 2rem;
+  width: 100%;
+}
+
+}
+    </style>
+    
+  </head>
+
+  <body>
+    <div class="product-details">
+      <div class="product-detail-left">
+        <div class="product-slider-img">
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper product_img_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper product_img_gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-section">
+          <h3>Rating</h3>
+          <div class="rating">
+            <div class="rating-block">
+              <label for="" class="rating-point">5.0</label>
+              <div class="rating-stars">
+                <img
+                  width="12"
+                  height="12"
+                  src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                  alt="filled-star"
+                />
+                <img
+                  width="12"
+                  height="12"
+                  src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                  alt="filled-star"
+                />
+                <img
+                  width="12"
+                  height="12"
+                  src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                  alt="filled-star"
+                />
+                <img
+                  width="12"
+                  height="12"
+                  src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                  alt="filled-star"
+                />
+                <img
+                  width="12"
+                  height="12"
+                  src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                  alt="filled-star"
+                />
+              </div>
+            </div>
+            <div class="rating-range">
+              <ul class="ranges">
+                <li>
+                  <div class="range-left">
+                    <label for="">5</label>
+                    <img
+                      width="12"
+                      height="12"
+                      src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                      alt="filled-star"
+                    />
+                  </div>
+                  <div
+                    class="range-center"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        #ffdf00 0%,
+                        #ffdf00 100%
+                      );
+                    "
+                  ></div>
+                  <div class="range-right">
+                    <label for="">25</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="range-left">
+                    <label for="">4</label>
+                    <img
+                      width="12"
+                      height="12"
+                      src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                      alt="filled-star"
+                    />
+                  </div>
+                  <div
+                    class="range-center"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        #ffdf00 0%,
+                        #ffdf00 80%,
+                        #ddd 80%,
+                        #ddd 100%
+                      );
+                    "
+                  ></div>
+                  <div class="range-right">
+                    <label for="">20</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="range-left">
+                    <label for="">3</label>
+                    <img
+                      width="12"
+                      height="12"
+                      src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                      alt="filled-star"
+                    />
+                  </div>
+                  <div
+                    class="range-center"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        #ffdf00 0%,
+                        #ffdf00 60%,
+                        #ddd 60%,
+                        #ddd 100%
+                      );
+                    "
+                  ></div>
+                  <div class="range-right">
+                    <label for="">15</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="range-left">
+                    <label for="">2</label>
+                    <img
+                      width="12"
+                      height="12"
+                      src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                      alt="filled-star"
+                    />
+                  </div>
+                  <div
+                    class="range-center"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        #ffdf00 0%,
+                        #ffdf00 40%,
+                        #ddd 40%,
+                        #ddd 100%
+                      );
+                    "
+                  ></div>
+                  <div class="range-right">
+                    <label for="">10</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="range-left">
+                    <label for="">1</label>
+                    <img
+                      width="12"
+                      height="12"
+                      src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                      alt="filled-star"
+                    />
+                  </div>
+                  <div
+                    class="range-center"
+                    style="
+                      background: linear-gradient(
+                        to right,
+                        #ffdf00 0%,
+                        #ffdf00 20%,
+                        #ddd 20%,
+                        #ddd 100%
+                      );
+                    "
+                  ></div>
+                  <div class="range-right">
+                    <label for="">5</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- This section is for Review -->
+        </div>
+      </div>
+
+      <div class="product-detail-right">
+        <div class="product-content">
+          <div class="product-head">
+            <p class="product-title">Converse Full - Red</p>
+            <p class="product-brand">All Star</p>
+          </div>
+          <span class="product-price">$15.99</span>
+          <form action="">
+            <p class="size-lable">Size (UK)</p>
+            <ul class="shoes-size">
+              <label class="material-icons">
+                <input type="radio" name="size" value="5" checked />
+                <span>5</span>
+              </label>
+              <label class="material-icons">
+                <input type="radio" name="size" value="6" />
+                <span>6</span>
+              </label>
+              <label class="material-icons">
+                <input type="radio" name="size" value="7" />
+                <span>7</span>
+              </label>
+              <label class="material-icons">
+                <input type="radio" name="size" value="8" />
+                <span>8</span>
+              </label>
+              <label class="material-icons">
+                <input type="radio" name="size" value="9" />
+                <span>9</span>
+              </label>
+            </ul>
+
+            <div class="product-description">
+              <h3>Description</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident iste distinctio omnis, veritatis consectetur, earum
+                exercitationem quas impedit fuga, aliquid ut aut. Reiciendis
+                culpa, id ullam temporibus vero beatae quam, modi labore vel,
+                quod nesciunt alias aliquid. Nobis consequuntur facere
+                repudiandae, iusto porro ipsum ratione eos. Architecto atque
+                praesentium at.
+              </p>
+            </div>
+            <div class="details">
+              <h4>Details</h4>
+              <div class="detail">
+                <img
+                  width="16"
+                  height="16"
+                  src="https://img.icons8.com/tiny-glyph/16/000000/marker.png"
+                  alt="marker"
+                />
+                <p>Sent from USA</p>
+              </div>
+
+              <div class="detail">
+                <img
+                  width="16"
+                  height="16"
+                  src="https://img.icons8.com/material-rounded/16/000000/free-shipping.png"
+                  alt="free-shipping"
+                />
+                <p>Estimated Shipping $3.50</p>
+              </div>
+
+              <div class="detail">
+                <img
+                  width="16"
+                  height="16"
+                  src="https://img.icons8.com/fluency-systems-filled/16/verified-badge.png"
+                  alt="verified-badge"
+                />
+                <p>100% Original Product</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-detail-center">
+        <div class="order-summary">
+          <div class="order-summary-head">
+            <p>Order Details</p>
+          </div>
+          <div class="order-summary-body">
+            <div class="quantity">
+              <label for="">Quantity</label>
+              <form>
+                <div
+                  class="value-button"
+                  id="decrease"
+                  onclick="decreaseValue()"
+                  value="Decrease Value"
+                >
+                  -
+                </div>
+                <input type="number" id="number" value="0" />
+                <div
+                  class="value-button"
+                  id="increase"
+                  onclick="increaseValue()"
+                  value="Increase Value"
+                >
+                  +
+                </div>
+              </form>
+            </div>
+            <div class="details-block">
+              <p>Color</p>
+              <p>Red</p>
+            </div>
+            <div class="details-block">
+              <p>Size</p>
+              <p>9</p>
+            </div>
+            <div class="details-block">
+              <p>Price</p>
+              <p>$15.99</p>
+            </div>
+            <div class="details-block">
+              <p>Discount</p>
+              <p>$1.5</p>
+            </div>
+            <div class="details-block">
+              <p>Delivery</p>
+              <p>$2.5</p>
+            </div>
+            <div class="notes">
+              <p>Notes</p>
+              <form action="">
+                <textarea
+                  name="notes"
+                  id=""
+                  placeholder="Write a notes..."
+                ></textarea>
+              </form>
+            </div>
+
+            <div class="coupon">
+              <p>Apply PromoCode</p>
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/000000/ticket.png"
+                alt="ticket"
+              />
+            </div>
+
+            <div class="total-block">
+              <p>Sub Total</p>
+              <p class="total-amt">$17.99</p>
+            </div>
+
+            <div class="buttons">
+              <button class="buy">Buy Now</button>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product_additionals">
+        <div class="review">
+      <h3>Review</h3>
+
+      <div class="write-review">
+        <div class="user-pic">
+          <img src="img/u1.jpg" alt="" />
+        </div>
+
+        <div class="review-section">
+          <form action="">
+            <div class="write">
+              <textarea
+                name=""
+                id=""
+                placeholder="Write your review..."
+              ></textarea>
+            </div>
+            <div class="upload-img">
+              <label class="label">
+                <!-- <img width="18" height="18" src="https://img.icons8.com/metro/18/000000/camera--v2.png" alt="camera--v2"/> -->
+                <input type="file" style="display: none;"/>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="customer-reviews">
+
+        <div class="user-pic">
+          <img src="img/u1.jpg" alt="" />
+        </div>
+
+        <div class="user">
+          <div class="user-head">
+              <p class="name">Sonia Sharma</p>
+          <div class="rating-stars">
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+            </div>
+          </div>
+
+          <div class="review-desc">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti illo magnam dolores quae soluta omnis dolore aspernatur ab excepturi vitae.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="customer-reviews">
+
+        <div class="user-pic">
+          <img src="img/u1.jpg" alt="" />
+        </div>
+
+        <div class="user">
+          <div class="user-head">
+              <p class="name">Sonia Sharma</p>
+          <div class="rating-stars">
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+              <img
+                width="12"
+                height="12"
+                src="https://img.icons8.com/plumpy/12/000000/filled-star.png"
+                alt="filled-star"
+              />
+            </div>
+          </div>
+
+          <div class="review-desc">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti illo magnam dolores quae soluta omnis dolore aspernatur ab excepturi vitae.</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="similar-products">
+      <h3>Similar Products</h3>
+      <div class="similar-products-wrapper">
+        
+      </div>
+    </div>
+    
+    </div>
+    
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperGallery = new Swiper(".product_img_gallery", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var ProductImgswiper = new Swiper(".product_img_swiper", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiperGallery,
+      },
+    });
+
+    
+      function increaseValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById("number").value = value;
+      }
+
+      function decreaseValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? (value = 1) : "";
+        value--;
+        document.getElementById("number").value = value;
+      }
+    
+      function similarProduct(exploreFor) {
+            fetch('all_products.json')
+                .then(response => response.json())
+                .then(data => {
+                    const shoes = Object.values(data);
+                    const exploreGrid = document.querySelector('.explore-grid');
+
+                    shoes.forEach(SingleShoes => {
+                        const productCard = document.createElement('div');
+                        productCard.classList.add('product-card');
+                        productCard.id = `card_${SingleShoes.id}`;
+                        productCard.innerHTML = `
+                        <div class="product-img">
+                            <img src="${SingleShoes.imageURL}"/>
+                            <div class="wishlist_icon save_${SingleShoes.id}" id="save_${SingleShoes.id}" onclick="wished(${SingleShoes.id})">
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">${SingleShoes.name}</p>
+                                <p class="product-brand">${SingleShoes.brand}</p>
+                            </div>
+
+                            <div class="item_pricing">
+                                <span class="product-price">$${SingleShoes.price}</span>
+                             </div>
+
+                            <form action="#" method ="get">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size"></ul>
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button" id="${SingleShoes.id}"><i class="bi bi-cart-plus-fill"></i> Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>`;
+                        exploreFor = exploreFor.toUpperCase();
+                        if (SingleShoes.gender == exploreFor || SingleShoes.category == exploreFor || exploreFor == "ALL") {
+                            exploreGrid.append(productCard);
+                        }
+                    });
+                });
+        }
+    </script>
+
+  </body>
+</html>

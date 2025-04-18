@@ -1,0 +1,740 @@
+<body>
+    <div class="search-container">
+        <div class="search-head">
+            <div class="search-wrapper">
+                <form action="" class="search-box">
+                    <img width="24" height="24"
+                        src="https://img.icons8.com/fluency-systems-regular/24/000000/search--v1.png" alt="search--v1" />
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <input type="submit" value="Search" hidden>
+                </form>
+            </div>
+        </div>
+        <div class="search-body">
+            <div class="search-sidenav">
+                <div class="search-sidenav-head">
+                    <i class="bi bi-sliders"></i>
+                    <p>Filters</p>
+                </div>
+                <div class="search-sidenav-body">
+                    <div class="filter_category" id="category">
+                        <div class="filter_title">
+                            <p>Category | Type</p>
+                            <i class="bi bi-chevron-bar-expand expand_filter_option"></i>
+                        </div>
+                        <div class="filter_options">
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="running" id="running" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Running</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="football" id="football" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Football</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="casual" id="casual" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Casual</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="formal" id="formal" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Formal</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="Sports" id="Sports">
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Sports</lable>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter_category" id="gender">
+                        <div class="filter_title">
+                            <p>Gender</p>
+                            <i class="bi bi-chevron-bar-expand expand_filter_option"></i>
+                        </div>
+                        <div class="filter_options">
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="men" id="men" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Men</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="women" id="women" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Women</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="kids" id="kids" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Kids</lable>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter_category" id="brand">
+                        <div class="filter_title">
+                            <p>Brand</p>
+                            <i class="bi bi-chevron-bar-expand expand_filter_option"></i>
+                        </div>
+                        <div class="filter_options">
+                            <div class="filter_option">
+                                <div class="brand-logo">
+                                    <img src="img/adidas.png" alt="">
+                                </div>
+                                <label for="addidas">Adidas</label>
+                            </div>
+                            <div class="filter_option">
+                                <div class="brand-logo">
+                                    <img src="img/jordan.png" alt="">
+                                </div>
+                                <label for="addidas">Air Jordan</label>
+                            </div>
+                            <div class="filter_option">
+                                <div class="brand-logo">
+                                    <img src="img/vans.png" alt="">
+                                </div>
+                                <label for="addidas">Vans</label>
+                            </div>
+                            <div class="filter_option">
+                                <div class="brand-logo">
+                                    <img src="img/puma.png" alt="">
+                                </div>
+                                <label for="addidas">Puma</label>
+                            </div>
+                            <div class="filter_option">
+                                <div class="brand-logo">
+                                    <img src="img/reebok.png" alt="">
+                                </div>
+                                <label for="addidas">Reebok</label>
+                            </div>
+                            <div class="filter_option">
+                                <div class="brand-logo">
+                                    <img src="img/Bata.png" alt="">
+                                </div>
+                                <label for="addidas">Bata</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter_category" id="price">
+                        <div class="filter_title">
+                            <p>Price</p>
+                            <i class="bi bi-chevron-bar-expand expand_filter_option"></i>
+                        </div>
+                        <div class="filter_options">
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="below_50" id="below_50" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Below $50</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="51_100" id="51_100" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>$51 - $100</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="101_500" id="101_500" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>$101 - $500</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="over_500" id="over_500" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Over $500</lable>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter_category" id="material">
+                        <div class="filter_title">
+                            <p>material</p>
+                            <i class="bi bi-chevron-bar-expand expand_filter_option"></i>
+                        </div>
+                        <div class="filter_options">
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="canvas" id="canvas" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Canvas</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="leather" id="leather" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Leather</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="textile" id="textile" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Textile</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="textile" id="textile" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Textile</lable>
+                            </div>
+                            <div class="filter_option">
+                                <div class="checkbox_wrapper">
+                                    <span class="checkbox">
+                                        <input type="checkbox" name="rubber" id="rubber" />
+                                        <svg>
+                                            <use xlink:href="#checkbox-30" class="checkbox"></use>
+                                        </svg>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                                        <symbol id="checkbox-30" viewBox="0 0 22 22">
+                                            <path fill="none" stroke="currentColor"
+                                                d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2" />
+                                        </symbol>
+                                    </svg>
+                                </div>
+                                <lable>Rubber</lable>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-result">
+                <div class="search_result_grid">
+                    <div class="product-card">
+                        <img src="img/mens-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/womens-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/kids-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/casual-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/addidas-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/loafer-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/crocs-shoes.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/heels.jpg" class="product-img" />
+
+                        <div class="card-content">
+                            <div class="card-product-head">
+                                <p class="product-title">Converse Full - Red</p>
+                                <p class="product-brand">All Star</p>
+                            </div>
+                            <span class="product-price">$15.99</span>
+                            <form action="">
+                                <p class="size-lable">Size (UK)</p>
+                                <ul class="shoes-size">
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="5" checked />
+                                        <span>5</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="6" />
+                                        <span>6</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="7" />
+                                        <span>7</span>
+                                    </label>
+                                    <label class="material-icons">
+                                        <input type="radio" name="size" value="8" />
+                                        <span>8</span>
+                                    </label>
+                                    <label for="walking" class="material-icons">
+                                        <input type="radio" name="size" value="9" />
+                                        <span>9</span>
+                                    </label>
+                                </ul>
+
+                                <div class="product-actions">
+                                    <button class="add-to-cart-button">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const expand_filter_option = $('.expand_filter_option');
+        console.log(expand_filter_option);
+        
+        $(document).on('click tap', '.expand_filter_option', function(){
+            $(this).toggleClass('.expanded');
+            const filterOptions = $(this).closest('.filter_category').find('.filter_options').toggle();
+            // console.log($(this).closest('.filter_category').find('.filters_options'));
+        });
+
+        $(document).on('click', '.search-sidenav-head', function(){
+            const sidenavBody = $('.search-sidenav-body');
+            sidenavBody.toggle();
+        })
+    </script>
+</body>
